@@ -2,7 +2,58 @@
 ## Aim:
 
 
-## Algorithm:
+## ALGORITHMS:
+### Step 1 : 
+
+Import necessary libraries such as Torch, NumPy, Pandas, and Matplotlib for model building.
+
+### Step 2 :
+
+Load the “income.csv” dataset using Pandas and display its structure and basic information.
+
+### Step 3 :
+
+Define categorical, continuous, and label columns for model input and output preparation.
+
+### Step 4 :
+
+Convert categorical columns to category datatype for embedding processing in neural network.
+
+### Step 5 :
+
+Handle missing values by adding placeholder categories or filling continuous values with mean.
+
+### Step 6 :
+
+Encode categorical columns as numerical category codes and convert to PyTorch integer tensors.
+
+### Step 7 :
+
+Convert continuous columns to float tensors after normalization and missing value imputation.
+
+### Step 8 :
+
+Split dataset into training and testing tensors for categorical, continuous, and label columns.
+
+### Step 9 :
+
+Define the TabularModel class with embedding, dropout, normalization, and dense layer structures.
+
+### Step 10 :
+
+Combine categorical embeddings and continuous features, then pass through hidden layers sequentially.
+
+### Step 11 :
+
+Initialize model, define cross-entropy loss function, and select Adam optimizer for gradient updates.
+
+### Step 12 :
+
+Train model for 300 epochs, compute loss, backpropagate, and update parameters using optimizer.
+
+### Step 13 :
+
+Evaluate test accuracy by comparing predicted class outputs with true labels and display performance.
 
 ## Program:
 ```python
@@ -143,4 +194,45 @@ accuracy = correct / len(y_test) * 100
 print(f'{correct} out of {len(y_test)} = {accuracy:.2f}% correct')
 ```
 
-## Result:
+## OUTPUTS :
+### Len and preview of datasets:
+
+<<img width="1186" height="282" alt="image" src="https://github.com/user-attachments/assets/082cc252-1b4f-437a-9c0c-55269a04e9b0" />
+
+### Columns:
+
+<img width="705" height="81" alt="image" src="https://github.com/user-attachments/assets/583b655d-e75a-4bfa-90e4-a7a0eb0cd8fb" />
+
+### Len of cat,cont & Y col :
+
+<img width="252" height="85" alt="image" src="https://github.com/user-attachments/assets/b77e957b-4a6c-4cc2-be41-6d3d9c4b8f66" />
+
+### View continuous columns with the mean:
+
+<img width="212" height="157" alt="image" src="https://github.com/user-attachments/assets/bbd93903-67ba-459c-b0f3-5d3410602a3e" />
+
+### Model:
+
+<img width="907" height="417" alt="image" src="https://github.com/user-attachments/assets/44e1b338-6f08-4117-88b0-e70cf91aba8f" />
+
+### Loss :
+
+<img width="332" height="345" alt="image" src="https://github.com/user-attachments/assets/a1032982-81bd-4543-8a3f-834590a03303" />
+
+### Entropy Loss Vs Training Loss :
+
+<img width="825" height="560" alt="image" src="https://github.com/user-attachments/assets/25b8f2e2-9d0c-47fd-96c4-c39b116810d4" />
+
+
+### CE Loss :
+
+<img width="212" height="28" alt="image" src="https://github.com/user-attachments/assets/2623dbc2-db60-435a-932d-6a6701afc7d6" />
+
+
+### Accuracy :
+
+<img width="363" height="32" alt="image" src="https://github.com/user-attachments/assets/3e7d69c4-d43a-49b6-923f-8da36170dcd2" />
+
+## RESULT :
+
+Thus , The model accurately classifies individuals’ income levels using binary classification on the Census Income dataset was executed successfully.
