@@ -1,5 +1,7 @@
 # Binary Classification with Neural Networks
 ## Aim:
+To build a neural network model using Binary Classification on the Census Income Dataset
+Completion requirements
 
 
 ## ALGORITHMS:
