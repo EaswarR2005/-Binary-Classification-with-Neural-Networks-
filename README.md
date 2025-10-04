@@ -1,8 +1,11 @@
 # Binary Classification with Neural Networks
-## Aim:
-To build a neural network model using Binary Classification on the Census Income Dataset
-Completion requirements
 
+# Name: EASWAR R
+# Reg No: 212223230053
+# Date: 04/10/25
+
+## Aim:
+To build and train a binary classification model using PyTorch on the Census Income dataset to predict whether an individual earns more than $50,000 annually based on categorical and continuous features.
 
 ## ALGORITHMS:
 ### Step 1 : 
